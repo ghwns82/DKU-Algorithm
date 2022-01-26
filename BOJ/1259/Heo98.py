@@ -8,4 +8,4 @@ while(True):
     else:
         solve_list.append('no')
 for i in solve_list:
-    print(i)
+    print(i) 
