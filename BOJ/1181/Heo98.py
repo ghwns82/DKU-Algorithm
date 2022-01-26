@@ -12,4 +12,3 @@ dictionary_list.sort(key = lambda x : len(x))
 
 for i in dictionary_list:
     print(i)
-    
