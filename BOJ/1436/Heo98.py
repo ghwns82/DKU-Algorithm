@@ -7,5 +7,5 @@ while(True):
         print(first)
         break;
     first+=1
-    
+   
 
