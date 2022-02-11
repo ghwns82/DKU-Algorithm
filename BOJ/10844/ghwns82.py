@@ -1,16 +1,11 @@
 # 10844
-def cal(depth, num):
-    if depth==1:
-        return 1
-    else:
-        if 0<num<9:
-            return cal(depth-1, num-1)+cal(depth-1, num+1)
-        if num==9:
-            return cal(depth-1, num-1)
-        if num ==0:
-            return cal(depth-1, num+1)
-depth = int(input())
-result=0
-for i in range(1,10):
-    result += cal(depth, i)
-print(result)
+state=[0]+[1 for i in range(9)]
+for _ in range(int(input())-1):
+    next_state = [0 for i in range(10)]
+    for i,v in enumerate(state[1:-1],1):
+        next_state[i+1]+=v
+        next_state[i-1]+=v
+    next_state[1]+=state[0]
+    next_state[8]+=state[9]
+    state = next_state
+print(sum(state)%1_000_000_000)
