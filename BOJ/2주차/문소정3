@@ -1,0 +1,7 @@
+a = list(map(int, input().split()))
+news = list(map(int, input().split()))
+
+s = a[0] * a[1]
+
+for i in range(len(news)):
+    print(news[i] - s, end = ' ')
