@@ -1,3 +1,3 @@
-# 16953 A->B
+# 16953 A → B
 
 https://www.acmicpc.net/problem/16953
